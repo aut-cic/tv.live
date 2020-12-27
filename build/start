@@ -1,0 +1,22 @@
+#!/bin/bash
+
+INPUT=${LIVE_BASE}${LIVE_CHANN_ID} 
+echo "Removing ${DIR} files"
+rm -f ${DIR}/*
+echo "Streaming $INPUT"
+
+cvlc -I dummy $INPUT vlc://quit \
+   --sout "#std{ \
+                access=livehttp{ \
+                     seglen=5, \
+                     numsegs=3, \
+		     delsegs=true, \
+                     index=${DIR}/stream.m3u8, \
+                     index-url=${LIVE_INDEX_BASE}${LIVE_CHANN_ID}/########.ts \
+                 }, \
+                 mux=ts{ \
+                     use-key-frames \
+                 }, \
+                 dst=${DIR}/########.ts \
+           }"
+ 
