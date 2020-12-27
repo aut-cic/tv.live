@@ -1,0 +1,219 @@
+version: '2.2'
+
+services:
+
+ irib_101:
+    image: live
+    volumes: [ "/ramdisk/live/irib1/101:/data" ]
+    environment: { LIVE_CHANN_ID: 101 }
+    cpus: 0.3
+    env_file: ./env1
+    restart: always
+    network_mode: host
+
+ irib_102:
+    image: live
+    volumes: [ "/ramdisk/live/irib1/102:/data" ]
+    environment: { LIVE_CHANN_ID: 102 }
+    env_file: ./env1
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_103:
+    image: live
+    volumes: [ "/ramdisk/live/irib1/103:/data" ]
+    environment: { LIVE_CHANN_ID: 103 }
+    env_file: ./env1
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_125:
+    image: live
+    volumes: [ "/ramdisk/live/irib3/125:/data" ]
+    environment: { LIVE_CHANN_ID: 125 }
+    env_file: ./env3
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_104:
+    image: live
+    volumes: [ "/ramdisk/live/irib1/104:/data" ]
+    environment: { LIVE_CHANN_ID: 104 }
+    env_file: ./env1
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_105:
+    image: live
+    volumes: [ "/ramdisk/live/irib1/105:/data" ]
+    environment: { LIVE_CHANN_ID: 105 }
+    env_file: ./env1
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_106:
+    image: live
+    volumes: [ "/ramdisk/live/irib1/106:/data" ]
+    environment: { LIVE_CHANN_ID: 106 }
+    env_file: ./env1
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_107:
+    image: live
+    volumes: [ "/ramdisk/live/irib1/107:/data" ]
+    environment: { LIVE_CHANN_ID: 107 }
+    env_file: ./env1
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_108:
+    image: live
+    volumes: [ "/ramdisk/live/irib1/108:/data" ]
+    environment: { LIVE_CHANN_ID: 108 }
+    env_file: ./env1
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_119:
+    image: live
+    volumes: [ "/ramdisk/live/irib1/119:/data" ]
+    environment: { LIVE_CHANN_ID: 119 }
+    env_file: ./env1
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_120:
+    image: live
+    volumes: [ "/ramdisk/live/irib1/120:/data" ]
+    environment: { LIVE_CHANN_ID: 120 }
+    env_file: ./env1
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_109:
+    image: live
+    volumes: [ "/ramdisk/live/irib2/109:/data" ]
+    environment: { LIVE_CHANN_ID: 109 }
+    env_file: ./env2
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_112:
+    image: live
+    volumes: [ "/ramdisk/live/irib2/112:/data" ]
+    environment: { LIVE_CHANN_ID: 112 }
+    env_file: ./env2
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_113:
+    image: live
+    volumes: [ "/ramdisk/live/irib2/113:/data" ]
+    environment: { LIVE_CHANN_ID: 113 }
+    env_file: ./env2
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_114:
+    image: live
+    volumes: [ "/ramdisk/live/irib2/114:/data" ]
+    environment: { LIVE_CHANN_ID: 114 }
+    env_file: ./env2
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_115:
+    image: live
+    volumes: [ "/ramdisk/live/irib2/115:/data" ]
+    environment: { LIVE_CHANN_ID: 115 }
+    env_file: ./env2
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_116:
+    image: live
+    volumes: [ "/ramdisk/live/irib2/116:/data" ]
+    environment: { LIVE_CHANN_ID: 116 }
+    env_file: ./env2
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_117:
+    image: live
+    volumes: [ "/ramdisk/live/irib2/117:/data" ]
+    environment: { LIVE_CHANN_ID: 117 }
+    env_file: ./env2
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_118:
+    image: live
+    volumes: [ "/ramdisk/live/irib2/118:/data" ]
+    environment: { LIVE_CHANN_ID: 118 }
+    env_file: ./env2
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_122:
+    image: live
+    volumes: [ "/ramdisk/live/irib3/122:/data" ]
+    environment: { LIVE_CHANN_ID: 122 }
+    env_file: ./env3
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_126:
+    image: live
+    volumes: [ "/ramdisk/live/irib3/126:/data" ]
+    environment: { LIVE_CHANN_ID: 126 }
+    env_file: ./env3
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_127:
+    image: live
+    volumes: [ "/ramdisk/live/irib3/127:/data" ]
+    environment: { LIVE_CHANN_ID: 127 }
+    env_file: ./env3
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_134:
+    image: live
+    volumes: [ "/ramdisk/live/irib3/134:/data" ]
+    environment: { LIVE_CHANN_ID: 134 }
+    env_file: ./env3
+    cpus: 0.3
+    restart: always
+    network_mode: host
+
+ irib_135:
+    image: live
+    volumes: [ "/ramdisk/live/irib3/135:/data" ]
+    environment: { LIVE_CHANN_ID: 135 }
+    env_file: ./env3
+    cpus: 0.3
+    restart: always
+    network_mode: host

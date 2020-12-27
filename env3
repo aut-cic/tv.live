@@ -1,0 +1,3 @@
+LIVE_BASE=http://172.16.4.252:4030/bysid/
+LIVE_INDEX_BASE=http://tv.aut.ac.ir/live/irib3/
+
