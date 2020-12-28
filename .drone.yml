@@ -8,6 +8,7 @@ steps:
     image: plugins/docker
     settings:
       context: build
+      dockerfile: build/Dockerfile
       username: 1995parham
       password:
         from_secret: docker_password
