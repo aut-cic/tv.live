@@ -1,0 +1,15 @@
+---
+type: docker
+kind: pipeline
+name: default
+
+steps:
+  - name: docker
+    image: plugins/docker
+    settings:
+      dockerfile: build/Dockerfile
+      username: 1995parham
+      password:
+        from_secret: docker_password
+      repo: 1995parham/aut-tv-live
+      tags: latest
