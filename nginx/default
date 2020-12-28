@@ -1,91 +1,58 @@
+# vim: ft=nginx
+
 server {
-    listen 80 ;
+        listen 80 ;
 
-    root /var/www/html;
-    index index.html index.htm index.nginx-debian.html;
+        root /var/www/html;
+        index index.html index.htm index.nginx-debian.html;
 
-    server_name tv1.aut.ac.ir tv.aut.ac.ir;
-    server_tokens off;
-    try_files $uri $uri/ =404;
+        server_name tv1.aut.ac.ir tv.aut.ac.ir;
+        server_tokens off;
+        try_files $uri $uri/ =404;
 
-    location / {
-        proxy_pass http://localhost:8080;
-    }
-}
-server {
-    listen 80 default_server;
-
-    root /var/www/html;
-    index index.html index.htm index.nginx-debian.html;
-
-    server_name live.aut.ac.ir;
-    server_tokens off;
-    try_files $uri $uri/ =404;
-
-    location / {
-        #proxy_pass http://localhost:8096;
-        proxy_pass http://localhost:8080;
-        # kill cache
-        add_header Last-Modified $date_gmt;
-        add_header Cache-Control 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0';
-        if_modified_since off;
-        expires off;
-        etag off;
-    }
-
-    location /channels {
-        charset UTF-8;
-        root /data/local;
-    }
-
-    location /live {
-            root /ramdisk;
-            #autoindex on;
-
-            # Disable cache
-            add_header Cache-Control no-cache;
-
-            # CORS setup
-            add_header 'Access-Control-Allow-Origin' '*' always;
-            add_header 'Access-Control-Expose-Headers' 'Content-Length';
-
-            # Allow CORS preflight requests
-            if ($request_method = 'OPTIONS') {
-              add_header 'Access-Control-Allow-Origin' '*';
-              add_header 'Access-Control-Max-Age' 1728000;
-              add_header 'Content-Type' 'text/plain charset=UTF-8';
-              add_header 'Content-Length' 0;
-              return 204;
-            }
-
-            types {
-                application/vnd.apple.mpegurl m3u8;
-                video/mp2t ts;
-            }
-
-    }
+        location / {
+                proxy_pass http://localhost:8080;
+        }
 }
 
 server {
-    listen 443 ssl;
-    ssl_certificate /data/local/certs/tv.aut.ac.ir.crt;
-    ssl_certificate_key /data/local/certs/tv.aut.ac.ir.key;
+        listen 80 default_server;
 
-    location / {
-        return 301 http://live.aut.ac.ir$request_uri;
-     }
-  }
+        location / {
+                proxy_pass http://localhost:8080;
+        }
+
+        location /channels {
+                charset UTF-8;
+                root /data/local;
+        }
+
+        # https://docs.peer5.com/guides/setting-up-hls-live-streaming-server-using-nginx/
+        location /live {
+                root /ramdisk;
+
+                # Disable cache
+                add_header Last-Modified $date_gmt;
+                add_header Cache-Control 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0';
+                if_modified_since off;
+                expires off;
+                etag off;
+
+                types {
+                        application/vnd.apple.mpegurl m3u8;
+                        video/mp2t ts;
+                        application/dash+xml mpd;
+                }
+
+        }
+}
+
 server {
-    listen 8081;
+        listen 443 ssl;
+        ssl_certificate /data/local/certs/tv.aut.ac.ir.crt;
+        ssl_certificate_key /data/local/certs/tv.aut.ac.ir.key;
 
-    root /var/www/html;
-    index index.html index.htm index.nginx-debian.html;
-
-    server_name live.aut.ac.ir;
-    server_tokens off;
-    try_files $uri $uri/ =404;
-
-    location / {
-        proxy_pass http://localhost:8080;
-    }
+        location / {
+                return 301 http://live.aut.ac.ir$request_uri;
+        }
 }
