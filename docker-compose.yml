@@ -84,6 +84,24 @@ services:
   restart: always
   network_mode: host
 
+ irib_10:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/10:/data" ]
+  environment: { LIVE_CHANN_ID: 10 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_11:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/11:/data" ]
+  environment: { LIVE_CHANN_ID: 11 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
  irib_12:
   image: 1995parham/aut-tv-live
   volumes: [ "/ramdisk/live/irib5/12:/data" ]
