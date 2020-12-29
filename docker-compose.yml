@@ -218,21 +218,3 @@ services:
   env_file: ./env
   restart: always
   network_mode: host
-
- irib_27:
-  image: 1995parham/aut-tv-live
-  volumes: [ "/ramdisk/live/irib5/27:/data" ]
-  environment: { LIVE_CHANN_ID: 27 }
-  cpus: 0.3
-  env_file: ./env
-  restart: always
-  network_mode: host
-
- irib_28:
-  image: 1995parham/aut-tv-live
-  volumes: [ "/ramdisk/live/irib5/28:/data" ]
-  environment: { LIVE_CHANN_ID: 28 }
-  cpus: 0.3
-  env_file: ./env
-  restart: always
-  network_mode: host
