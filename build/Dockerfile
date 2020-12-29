@@ -1,8 +1,4 @@
-FROM galexrt/vlc
-
-USER root
-RUN mkdir /home/vlc && chown vlc:vlc /home/vlc
-ENV HOME=/home/vlc
+FROM jrottenberg/ffmpeg:4.1-alpine
 
 VOLUME /data
 ENTRYPOINT /entrypoint
