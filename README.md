@@ -1,5 +1,10 @@
 # AUT TV Live
 
+[![Drone (cloud)](https://img.shields.io/drone/build/aut-cic/tv.live.svg?style=flat-square&logo=drone)](https://cloud.drone.io/aut-cic/tv.live)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/1995parham/aut-tv-live/latest?style=flat-square&logo=docker)
+![Docker Pulls](https://img.shields.io/docker/pulls/1995parham/aut-tv-live?style=flat-square&logo=docker)
+
+
 ## Introduction
 
 Live component for AUT TV, this component serves TV data from the [tvheadend](https://tvheadend.org/) to HLS into a ramdisk.
