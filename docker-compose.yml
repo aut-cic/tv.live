@@ -11,7 +11,6 @@ services:
   restart: always
   network_mode: host
 
-
  irib_2:
   image: 1995parham/aut-tv-live
   volumes: [ "/ramdisk/live/irib5/2:/data" ]
@@ -232,6 +231,150 @@ services:
   image: 1995parham/aut-tv-live
   volumes: [ "/ramdisk/live/irib5/26:/data" ]
   environment: { LIVE_CHANN_ID: 26 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_101:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/101:/data" ]
+  environment: { LIVE_CHANN_ID: 101 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_102:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/102:/data" ]
+  environment: { LIVE_CHANN_ID: 102 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_103:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/103:/data" ]
+  environment: { LIVE_CHANN_ID: 103 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_104:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/104:/data" ]
+  environment: { LIVE_CHANN_ID: 104 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_105:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/105:/data" ]
+  environment: { LIVE_CHANN_ID: 105 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_106:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/106:/data" ]
+  environment: { LIVE_CHANN_ID: 106 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_107:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/107:/data" ]
+  environment: { LIVE_CHANN_ID: 107 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_108:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/108:/data" ]
+  environment: { LIVE_CHANN_ID: 108 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_109:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/109:/data" ]
+  environment: { LIVE_CHANN_ID: 109 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_110:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/110:/data" ]
+  environment: { LIVE_CHANN_ID: 110 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_111:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/111:/data" ]
+  environment: { LIVE_CHANN_ID: 111 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_112:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/112:/data" ]
+  environment: { LIVE_CHANN_ID: 112 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_113:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/113:/data" ]
+  environment: { LIVE_CHANN_ID: 113 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_114:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/114:/data" ]
+  environment: { LIVE_CHANN_ID: 114 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_115:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/115:/data" ]
+  environment: { LIVE_CHANN_ID: 115 }
+  cpus: 0.3
+  env_file: ./env
+  restart: always
+  network_mode: host
+
+ irib_116:
+  image: 1995parham/aut-tv-live
+  volumes: [ "/ramdisk/live/irib5/116:/data" ]
+  environment: { LIVE_CHANN_ID: 116 }
   cpus: 0.3
   env_file: ./env
   restart: always
