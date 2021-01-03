@@ -42,3 +42,6 @@ Channels must be the same between tvheadend, tv.tive and tv.
 |  IRIB TV3 HD  |   24   |
 |  TAMASHA HD   |   25   |
 |  MOSTANAD HD  |   26   |
+
+## References
+- https://www.teknotut.com/en/streaming-tv-online-with-tvheadend/
