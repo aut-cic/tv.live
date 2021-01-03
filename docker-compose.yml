@@ -267,7 +267,6 @@ services:
   volumes: [ "/ramdisk/live/irib5/101:/data" ]
   environment:
    LIVE_CHANN_ID: 101
-   RADIO: "true"
   cpus: 0.3
   env_file: ./env
   restart: always
@@ -278,7 +277,6 @@ services:
   volumes: [ "/ramdisk/live/irib5/102:/data" ]
   environment:
    LIVE_CHANN_ID: 102
-   RADIO: "true"
   cpus: 0.3
   env_file: ./env
   restart: always
@@ -289,7 +287,6 @@ services:
   volumes: [ "/ramdisk/live/irib5/103:/data" ]
   environment:
    LIVE_CHANN_ID: 103
-   RADIO: "true"
   cpus: 0.3
   env_file: ./env
   restart: always
