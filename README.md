@@ -36,12 +36,12 @@ Channels must be the same between tvheadend, tv.tive and tv.
 | POOYA & NAHAL |   18   |
 |    SALAMAT    |   19   |
 |     NASIM     |   20   |
-|    AL-ALAM    |   21   |
-|   ALKAWTHAR   |   22   |
-|   PRESS TV    |   23   |
-|  IRIB TV3 HD  |   24   |
-|  TAMASHA HD   |   25   |
-|  MOSTANAD HD  |   26   |
+|    AL-ALAM    |   28   |
+|   ALKAWTHAR   |   29   |
+|   PRESS TV    |   30   |
+|  IRIB TV3 HD  |   52   |
+|  TAMASHA HD   |   53   |
+|  MOSTANAD HD  |   54   |
 
 ## References
 
