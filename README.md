@@ -8,6 +8,7 @@
 
 Live component for AUT TV, this component serves TV data from the [tvheadend](https://tvheadend.org/) to HLS into a ramdisk.
 These information from ramdisk are served with Nginx.
+One of the key issues here is the infomation about channel frequencies. These information is required for having a complete tv experience.
 
 ## Channels
 
@@ -45,4 +46,4 @@ Channels must be the same between tvheadend, tv.tive and tv.
 ## References
 
 - https://www.teknotut.com/en/streaming-tv-online-with-tvheadend/
-- https://fa.m.wikipedia.org/wiki/%D9%81%D8%B1%D8%B3%D8%AA%D9%86%D8%AF%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C_%D8%AF%DB%8C%D8%AC%DB%8C%D8%AA%D8%A7%D9%84_%D8%B5%D8%AF%D8%A7_%D9%88_%D8%B3%DB%8C%D9%85%D8%A7
+- https://fa.wikipedia.org/wiki/%D9%81%D8%B1%D8%B3%D8%AA%D9%86%D8%AF%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C_%D8%AF%DB%8C%D8%AC%DB%8C%D8%AA%D8%A7%D9%84_%D8%B5%D8%AF%D8%A7_%D9%88_%D8%B3%DB%8C%D9%85%D8%A7
