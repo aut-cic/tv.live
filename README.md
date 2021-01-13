@@ -9,6 +9,7 @@
 Live component for AUT TV, this component serves TV data from the [tvheadend](https://tvheadend.org/) to HLS into a ramdisk.
 These information from ramdisk are served with Nginx.
 One of the key issues here is the infomation about channel frequencies. These information is required for having a complete tv experience.
+Other major issue here is that, only the main TV can have all channels without problem. The secondary TV has unknown issus with channels.
 
 ## Channels
 
